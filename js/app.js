@@ -28,27 +28,27 @@ const randomNumber = Math.floor(Math.random() * possibleChoices.length)
     computerChoiceDisplay.innerHTML = computerChoice
 }
 
-function getResult(){
-    if(computerChoice === userChoice){
-    result = 'it\'s a draw!'
-}
-    if(computerChoice === 'rock' && userChoice === 'paper'){
-    result = "you win!"
- }
-    if(computerChoice === 'rock' && userChoice === 'scissors'){
-        result = "too bad!"    
-}
-    if(computerChoice === 'paper' && userChoice === 'scissors'){
-        result = "you win!"
-    }
-    if(computerChoice === 'paper' && userChoice === 'rock'){
-        result = "too bad!"
-    }
-    if(computerChoice === 'scissors' && userChoice === 'paper'){
-        result = "too bad!"
-    }
-    if(computerChoice === 'scissors' && userChoice === 'rock'){
-        result = "you win!"
-    }
+function getResult() {
+   if(computerChoice === userChoice){
+    result = 'its a draw!'
+   }
+   if(computerChoice === 'rock' && userChoice === 'paper'){
+    result = 'you win!'
+   }
+   if(computerChoice === 'rock' && userChoice === 'scissors'){
+    result = 'you lose!'
+   }
+   if(computerChoice === 'paper' && userChoice === 'rock'){
+    result = 'you lose!'
+   }
+   if(computerChoice === 'paper' && userChoice === 'scissors'){
+    result = 'you win!'
+   }
+   if(computerChoice === 'scissors' && userChoice === 'paper'){
+    result = 'you lose!'
+   }
+   if(computerChoice === 'scissors' && userChoice === 'rock'){
+    result = 'you win!'
+   }
     resultDisplay.innerHTML = result
 }
